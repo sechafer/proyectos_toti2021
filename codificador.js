@@ -1,4 +1,6 @@
-var code = 'samuel eli chacon fernandez';
+function Enviar() {
+//var code = 'samuel eli chacon fernandez';
+var code = document.getElementById("nomeid");
 var string1 = code.split(' ');
 
 console.log(string1);
@@ -13,5 +15,8 @@ var string2 = '';
    word=  word.replaceAll('o','ober');
    string2 = string2 + ' ' + word;
   }
-
-   console.log(string2);
+  // console.log(string2);
+  if (string2.value != "") {
+    alert('Su frase codificada es  ' + string2.value + ' ');
+}
+}
